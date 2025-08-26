@@ -1,0 +1,4 @@
+        3 a.txt
+        3 b.txt
+        0 txt_files.txt
+        6 total
