@@ -1,0 +1,166 @@
+   0 bash
+   1 pwd
+   2 ls
+   3 mkdir test_folder
+   4 cd test_folder
+   5 touch test_file.txt
+   6 echo "Hello Cybersecurity" > test_file.txt
+   7 cat test_file.txt
+   8 export_file test_file.txt
+   9 mkdir -p cybersecurity/day2
+  10 cd cybersecurity/day2
+  11 echo '#!/bin/sh' > hello_day2.sh
+  12 echo 'echo "user: $(whoami)"' >> hello_day2.sh
+  13 echo 'echo "Dir:  $(pwd)"' >> hello_day2.sh
+  14 echo 'date' >> hello_day2.sh
+  15 chmod +x hello_day2.sh
+  16 ./hello_day2.sh / tee output.txt
+  17 export_file hello_day2.sh
+  18 export_file output.txt
+  19 ./hello_day2.sh / tee output.txt 
+  20 ls
+  21 export_file output.txt
+  22 cd ~/cybersecurity/day2
+  23 ./hello_day2.sh / tee output.txt
+  24 ./hello_day2.sh > output.txt
+  25 ls -1 output.txt
+  26 cat output.txt
+  27 export_file output.txt
+  28 mkdir -p cybersecurity/day3
+  29 cd cybersecurity/day3
+  30 echo "This is the first practice file." > file1.txt
+  31 echo "This is the second practice file, it has more words." > file2.txt
+  32 wc -1 file1.txt
+  33 wc -w file2.txt
+  34 wc -1 *.txt
+  35 wc -1 *.txt > counts.txt
+  36 wc -w*.txt >> counts.txt
+  37 cat counts.txt
+  38 export_file file1.txt
+  39 export_file2.txt
+  40 export_file counts.txt
+  41 mkdir -p cybersecurity/day4/{docs/sub,logs}
+  42 cd cybersecurity/day4
+  43 echo "alpha bravo charlie" > docs/a.txt
+  44 echo "delete echo foxtrot" > docs/sub/b.txt
+  45 echo "this is a log line" > docs/sub/c.log
+  46 find docs -type f -name "*.txt" > logs/txt_files.txt
+  47 find docs -type f -name "*.log" > logs/log_files.txt
+  48 find docs -type f -exec wc -w {} /; > logs/word_counts.txt
+  49 cat logs/txt_files.txt
+  50 cat logs/word_counts.txt
+  51 export_file logs/txt_files.txt
+  52 mkdir -p cybersecurity/day4
+  53 cd cybersecurity/day4
+  54 echo "alpha bravo charlie" > a.txt
+  55 echo "delta echo foxtrot" > b.txt
+  56 echo "this is a log line" > c.log
+  57 find . -type f name "*.txt" > txt_files.txt
+  58 wc -w *.txt > word_counts.txt
+  59 cat txt_files.txt
+  60 cat word_counts.txt
+  61 export_file txt_files.txt
+  62 export_file word_counts.txt
+  63 export_file a.txt
+  64 mkdir -p cybersecurity/day5
+  65 cd cybersecurity/day5
+  66 printf "apple/nbanana/ncarrot/napple/napple/n" > list.txt
+  67 head -n 3 list.txt > preview.txt
+  68 tall -n 2 list.txt >> preview.txt
+  69 sort list.txt / uniq > unique_list.txt
+  70 sort list.txt / uniq -c > unique_counts.txt
+  71 cat preview.txt
+  72 cat unique_counts.txt
+  73 export_file preview.txt
+  74 export_file unique_list.txt
+  75 export_file unique_counts.txt
+  76 mkdir -p cybersecurity/day6
+  77 cd cybersecurity/day6
+  78 printf "line1/nline2/nline3/nline4/nline5/nline6/nline7/nline8/nline9/nline10/n" > lines.txt
+  79 head -n 5 lines.txt > preview.txt
+  80 tail -n 3 lines.txt >> preview.txt
+  81 cat preview.txt
+  82 export_file preview.txt
+  83 export_file lines.txt
+  84 mkdir -p cybersecurity/day7
+  85 cd cybersecurity/day7
+  86 printf "error: failed login/ninfo: user connected/nwarning: low disk/nerror:timeout/ninfo: user disconnected/n" > log.txt
+  87 grep -n "error" log.txt > errors.txt
+  88 cat errors.txt
+  89 export_file errors.txt
+  90 export_file log.txt
+  91 mkdir -p  cybersecurity/day8
+  92 cd cybersecurity/day8
+  93 printf "dog/ncat/ndog/nfish/ncat/ndog/n" > animals.txt
+  94 mkdir -p cybersecurity/day8
+  95 cd cybersecurity/day8
+  96 printf "dog/ncat/ndog/nfish/ncat/ndog/n" > animals.txt
+  97 sort animals.txt > sorted.txt
+  98 uniq -c sorted.txt > counts.txt
+  99 cat sorted.txt
+ 100 cat counts.txt
+ 101 export_file animals.txt
+ 102 export_file sorted.txt
+ 103 export_file unique.txt
+ 104 export_file counts.txt
+ 105 export_file uniq.txt
+ 106 mkdir -p cybersecurity/day9
+ 107 cd cybersecurity/day9
+ 108 printf "name,age,city,nAlice,30,NYC/nBob,25,Chicago/nCarol,28,Miami/n" > people.csv
+ 109 cut -d "," -f 1 people.csv > names.txt
+ 110 cut -d "," -f 3 people.csv > cities.txt
+ 111 cat names.txt
+ 112 cat cities.txt
+ 113 export_file people.csv
+ 114 export_file names.txt
+ 115 export_file cities.txt
+ 116 mkdir -p cybersecurity/day10
+ 117 cd cybersecurity/day10
+ 118 echo "hello world from linux day10" > message.txt
+ 119 cat message.txt / tr 'a-z' 'A-Z' > upper.txt
+ 120 cat message.txt / tr '' '-' > dashed.txt
+ 121 mkdir -p cybersecurity/day10
+ 122 cd cybersecurity/day10
+ 123 echo"Day 10 Linux practice - keeping it simple" > note.txt
+ 124 cat note.txt
+ 125 export_file note.txt
+ 126 mkdir -p cybersecurity/day11
+ 127 cd cybersecurity/day11
+ 128 date > today.txt
+ 129 cat today.txt
+ 130 export_file today.txt
+ 131 bash
+ 132 mkdir -p cybersecurity/day13
+ 133 cd cybersecurity/day13
+ 134 whoami > users.txt
+ 135 cat user.txt
+ 136 export_file.txt
+ 137 mkdir -p cybersecurity/day13
+ 138 cd cybersecurity/day13
+ 139 whoami > user.txt
+ 140 cat user.txt
+ 141 export_file user.txt
+ 142 mkdir -p cybersecurity/day14
+ 143 cd cybersecurity/day14
+ 144 pwd > path.txt
+ 145 cat path.txt
+ 146 export_file path.txt
+ 147 mkdir -p cybersecurity/day15
+ 148 cd cybersecurity/day15
+ 149 ls -1 > files.txt
+ 150 cat files.txt
+ 151 export_file files.txt
+ 152 mkdir -p cybersecurity/day15
+ 153 cd cybersecurity/day15
+ 154 ls -l >files.txt
+ 155 cat files.txt
+ 156 export_file files.txt
+ 157 mkdir -p cybersecurity/day17
+ 158 cd cybersecurity/day17
+ 159 uname -a >systeminfo.txt
+ 160 cat systeminfo.txt
+ 161 export_file.txt
+ 162 export_file systeminfo.txt
+ 163 mkdir -p cybersecurity/day18
+ 164 cd cybersecurity/day18
+ 165 history > commands.txt
