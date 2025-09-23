@@ -1,0 +1,8 @@
+.
+..
+.ash_history
+.vfsync
+allfiles.txt
+cybersecuirty
+cybersecurity
+test_folder
