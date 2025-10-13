@@ -1,0 +1,7 @@
+System started
+User login success
+Service running
+
+New connection from 192.168.1.5
+Error: unauthorized access attempt
+User logout
