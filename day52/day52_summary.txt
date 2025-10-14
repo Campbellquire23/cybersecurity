@@ -1,0 +1,7 @@
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                 4.9G      2.3G      2.6G  47% /
+devtmpfs                123.0M         0    123.0M   0% /dev
+tmpfs                   123.1M      8.0K    123.1M   0% /run
+none                    123.1M         0    123.1M   0% /dev/shm
+
+=== Folder Usage (du -h  --max-depth=1) ===
