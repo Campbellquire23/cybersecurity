@@ -1,0 +1,6 @@
+=== Exact matches (grep -r) ===
+logs/system.log:Critical error: system overload
+
+=== Case-insensitive matches (grep -ri) ===
+logs/auth.log:Error: failed login
+logs/system.log:Critical error: system overload
