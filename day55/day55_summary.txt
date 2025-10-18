@@ -1,0 +1,5 @@
+
+=== Files Containing Errors ===
+logs/auth.log
+logs/system.log
+logs/network.log
